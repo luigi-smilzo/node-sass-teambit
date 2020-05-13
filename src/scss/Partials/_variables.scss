@@ -8,3 +8,19 @@ $col-main: #534231;
 $col-info: #374d8a;
 
 // Typography
+$font-main: 'Poppins', sans-serif;
+
+// Mixins
+@mixin inline-items {
+    list-style: none;
+    .Menu-item {
+        margin-left: 40px;
+        a {
+            text-decoration: none;
+            color: $col-main;
+            font-size: .8em;
+            font-weight: 500;
+        }
+    }
+    
+}

@@ -7,3 +7,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: #fff;
+    color: $col-main;
+    font-family: $font-main;
+    font-weight: 300;
+}
+
+// Buttons
+.Btn.Btn--hollow {
+    border: 1px solid $col-info;
+    padding: 10px;
+    border-radius: 6px;
+    img {
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}

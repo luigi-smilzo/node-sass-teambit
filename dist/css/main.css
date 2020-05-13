@@ -12,4 +12,106 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #fff;
+  color: #534231;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.Btn.Btn--hollow {
+  border: 1px solid #374d8a;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.Btn.Btn--hollow img {
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/*=-=-=-=-=-=-=*\
+    UTILITIES      
+\*=-=-=-=-=-=-=*/
+
+.u-container {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 0 25px;
+}
+
+.u-flexRow {
+  display: flex;
+}
+
+.u-justifyBtw {
+  justify-content: space-between;
+}
+
+.u-justifyCtr {
+  justify-content: center;
+}
+
+.u-justifyEnd {
+  justify-content: flex-end;
+}
+
+.u-alignCtr {
+  align-items: center;
+}
+
+@media all and (min-width: 1024px) {
+  .u-container {
+    padding: 0;
+  }
+}
+
+/*=-=-=-=-=-*\
+    HEADER     
+\*=-=-=-=-=-*/
+
+header {
+  line-height: 35px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+header .Nav-hamburger {
+  font-size: 20px;
+}
+
+header .Nav-inline {
+  display: none;
+}
+
+header .Nav-inline .Menu {
+  list-style: none;
+}
+
+header .Nav-inline .Menu .Menu-item {
+  margin-left: 40px;
+}
+
+header .Nav-inline .Menu .Menu-item a {
+  text-decoration: none;
+  color: #534231;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+@media all and (min-width: 1024px) {
+  header {
+    line-height: 55px;
+  }
+
+  header .Nav-hamburger {
+    display: none;
+  }
+
+  header .Nav-inline {
+    display: block;
+  }
+}
+
 

@@ -1,0 +1,35 @@
+/*=-=-=-=-=-=-=*\
+    UTILITIES      
+\*=-=-=-=-=-=-=*/
+
+.u-container {
+    margin: 0 auto;
+    max-width: 1150px;
+    padding: 0 25px;
+}
+
+.u-flexRow {
+    display: flex;
+}
+
+.u-justifyBtw {
+    justify-content: space-between;
+}
+
+.u-justifyCtr {
+    justify-content: center;
+}
+
+.u-justifyEnd {
+    justify-content: flex-end;
+}
+
+.u-alignCtr {
+    align-items: center;
+}
+
+@media all and (min-width: 1024px) {
+    .u-container {
+        padding: 0;
+    }
+}
