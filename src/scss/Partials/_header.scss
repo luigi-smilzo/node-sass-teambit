@@ -3,16 +3,35 @@
 \*=-=-=-=-=-*/
 
 header {
+    position: relative;
     line-height: 35px;
     padding: 10px 0;
     margin: 0 auto;
+    &::after {
+        @include containerBorder;
+    }
     .Nav-hamburger {
         font-size: 20px;
+        cursor: pointer;
     }
     .Nav-inline {
         display: none;
+
         .Menu {
             @include inline-items;
+            &-item {
+                position: relative;
+                &:hover .SubMenu {
+                    display: block;
+                }
+            }
+            &-item:first-child > a::after {
+                @include menuItemArrow;
+            }
+            .SubMenu {
+                @include subMenuHover;
+            }
+
         }
     }   
 }
@@ -20,6 +39,7 @@ header {
 @media all and (min-width: 1024px) {
     header {
         line-height: 55px;
+        margin: 0 25px;
         .Nav-hamburger {
             display: none;
         }

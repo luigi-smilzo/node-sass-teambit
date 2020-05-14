@@ -23,12 +23,31 @@ body {
   border: 1px solid #374d8a;
   padding: 10px;
   border-radius: 6px;
+  background: transparent;
+  transition: background 0.2s;
 }
 
 .Btn.Btn--hollow img {
   height: 18px;
   vertical-align: middle;
   margin-right: 5px;
+}
+
+.Btn.Btn--hollow span {
+  color: #374d8a;
+  transition: color 0.2s;
+}
+
+.Btn.Btn--hollow:hover {
+  background: #374d8a;
+}
+
+.Btn.Btn--hollow:hover span {
+  color: white;
+}
+
+.Btn.Btn--hollow:hover img {
+  fill: white;
 }
 
 /*=-=-=-=-=-=-=*\
@@ -72,13 +91,27 @@ body {
 \*=-=-=-=-=-*/
 
 header {
+  position: relative;
   line-height: 35px;
   padding: 10px 0;
   margin: 0 auto;
 }
 
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1150px;
+  height: 1px;
+  background: #b9b3ae;
+}
+
 header .Nav-hamburger {
   font-size: 20px;
+  cursor: pointer;
 }
 
 header .Nav-inline {
@@ -100,9 +133,52 @@ header .Nav-inline .Menu .Menu-item a {
   font-weight: 500;
 }
 
+header .Nav-inline .Menu .Menu-item a:hover {
+  color: #374d8a;
+}
+
+header .Nav-inline .Menu-item {
+  position: relative;
+}
+
+header .Nav-inline .Menu-item:hover .SubMenu {
+  display: block;
+}
+
+header .Nav-inline .Menu-item:first-child > a::after {
+  position: relative;
+  bottom: -4px;
+  left: 8px;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 2px;
+  border: 4px solid #fff;
+  border-top: 4px solid #534231;
+}
+
+header .Nav-inline .Menu .SubMenu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 0 15px;
+}
+
+header .Nav-inline .Menu .SubMenu-list {
+  list-style: none;
+  line-height: 32px;
+}
+
 @media all and (min-width: 1024px) {
   header {
     line-height: 55px;
+    margin: 0 25px;
   }
 
   header .Nav-hamburger {
