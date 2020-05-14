@@ -2,6 +2,13 @@
     COMPONENTS   
 \*=-=-=-=-=-=-=-*/
 
+// Separations
+hr {
+    border: 1px solid $col-separation;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
 // Buttons
 .Btn {
     background: $col-info;
@@ -46,19 +53,6 @@
             fill: white;
         }
     }
-}
-
-// Separator
-@mixin containerBorder ($width: 1150px, $bg-color: #b9b3ae) {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: $width;
-    height: 1px;
-    background: $bg-color;
 }
 
 // Menu components

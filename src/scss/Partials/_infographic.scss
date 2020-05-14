@@ -1,0 +1,53 @@
+/*=-=-=-=-=-=-=-=*\
+    INFOGRAPHIC   
+\*=-=-=-=-=-=-=-=*/
+
+.Infographic {
+    position: relative;
+    background: $col-bg-alt;
+    padding: 100px 25px 0;
+
+    h2 {
+        @include textStyle ($size: 1.4em, $align: center, $spacing: 30px);
+        line-height: 40px;
+        margin-bottom: 100px;
+    }
+    &-card {
+        width: 100%;
+        margin-bottom: 50px;
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            height: 105px;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    & div > img {
+        margin-bottom: 100px;
+    }
+}
+
+.Infographic.Infographic--before {
+    &::after {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        content: '';
+        width: calc(100% - 100px);
+        max-width: 1150px;
+        height: 1px;
+        background: $col-separation;
+        padding: 0 25px;
+    }
+}
+
+.Infographic.Infographic--after {
+    h2:last-child {
+        margin-bottom: 60px;
+    }
+}

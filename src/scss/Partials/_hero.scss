@@ -51,7 +51,7 @@
             }
         }
         &-info > a {
-            text-align: left;
+            display: inline-block;
         }
         &-figure {
             flex-basis: calc(100% / 2);

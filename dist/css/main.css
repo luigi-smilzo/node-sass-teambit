@@ -68,6 +68,12 @@ body {
     COMPONENTS   
 \*=-=-=-=-=-=-=-*/
 
+hr {
+  border: 1px solid #b9b3ae;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
 .Btn {
   background: #374d8a;
   color: #fff;
@@ -130,18 +136,6 @@ header {
   line-height: 35px;
   padding: 10px 0;
   margin: 0 auto;
-}
-
-header::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 1150px;
-  height: 1px;
-  background: #b9b3ae;
 }
 
 header .Nav-hamburger {
@@ -295,7 +289,7 @@ header .Nav-inline .Menu .SubMenu-list {
   }
 
   .Hero-info > a {
-    text-align: left;
+    display: inline-block;
   }
 
   .Hero-figure {
@@ -320,6 +314,61 @@ header .Nav-inline .Menu .SubMenu-list {
     color: #bdb5af;
     margin: 0 15px;
   }
+}
+
+/*=-=-=-=-=-=-=-=*\
+    INFOGRAPHIC   
+\*=-=-=-=-=-=-=-=*/
+
+.Infographic {
+  position: relative;
+  background: #f9e6d2;
+  padding: 100px 25px 0;
+}
+
+.Infographic h2 {
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 40px;
+  margin-bottom: 100px;
+}
+
+.Infographic-card {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.Infographic-card img {
+  display: block;
+  margin: 0 auto;
+  height: 105px;
+  margin-bottom: 20px;
+}
+
+.Infographic-card p {
+  text-align: center;
+}
+
+.Infographic div > img {
+  margin-bottom: 100px;
+}
+
+.Infographic.Infographic--before::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: calc(100% - 100px);
+  max-width: 1150px;
+  height: 1px;
+  background: #b9b3ae;
+  padding: 0 25px;
+}
+
+.Infographic.Infographic--after h2:last-child {
+  margin-bottom: 60px;
 }
 
 
