@@ -12,6 +12,15 @@
     display: flex;
 }
 
+.u-flexCol {
+    display: flex;
+    flex-flow: column;
+}
+
+.u-flexWrap {
+    flex-wrap: wrap;
+}
+
 .u-justifyBtw {
     justify-content: space-between;
 }

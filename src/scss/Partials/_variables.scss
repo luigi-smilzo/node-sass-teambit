@@ -6,11 +6,17 @@
 $col-bg-alt: #f9e6d2;
 $col-main: #534231;
 $col-info: #374d8a;
+$col-info-alt: #233569;
 
 // Typography
 $font-main: 'Poppins', sans-serif;
 
-// Mixins
+@mixin textStyle ($size: 1em, $align: center, $spacing: 30px) {
+    font-size: $size;
+    text-align: $align;
+    margin-bottom: $spacing;
+}
+// Layout
 @mixin inline-items {
     list-style: none;
     .Menu-item {

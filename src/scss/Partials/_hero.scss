@@ -1,0 +1,40 @@
+/*=-=-=-=-*\
+    HERO          
+\*=-=-=-=-*/
+
+.Hero {
+    padding: 100px 0;
+    &-info h1 {
+        @include textStyle ($size: 2.8em);
+    }
+    &-info p {
+        @include textStyle ($size: 1.1em);
+    }
+    &-info > a {
+        display: block;
+        font-size: .8em;
+        text-decoration: none;
+        text-align: center;
+        color: $col-main;
+        margin: 20px 0;
+    }
+    &-figure img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.CallToAction {
+    a {
+        font-size: .8em;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+    }
+    & > span {
+        font-size: .8em;
+        line-height: 35px;
+        color: #bdb5af;
+    }
+
+}

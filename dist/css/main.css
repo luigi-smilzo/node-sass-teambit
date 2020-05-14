@@ -33,6 +33,15 @@ body {
   display: flex;
 }
 
+.u-flexCol {
+  display: flex;
+  flex-flow: column;
+}
+
+.u-flexWrap {
+  flex-wrap: wrap;
+}
+
 .u-justifyBtw {
   justify-content: space-between;
 }
@@ -59,6 +68,24 @@ body {
     COMPONENTS   
 \*=-=-=-=-=-=-=-*/
 
+.Btn {
+  background: #374d8a;
+  color: #fff;
+  line-height: 35px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.Btn img {
+  height: 18px;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
+.Btn:hover {
+  background: #233569;
+}
+
 .Btn.Btn--hollow {
   border: 1px solid #374d8a;
   padding: 10px;
@@ -67,10 +94,14 @@ body {
   transition: background 0.2s;
 }
 
-.Btn.Btn--hollow img {
+.Btn.Btn--hollow svg {
   height: 18px;
   vertical-align: middle;
   margin-right: 5px;
+}
+
+.Btn.Btn--hollow svg path {
+  transition: fill 0.2s;
 }
 
 .Btn.Btn--hollow span {
@@ -86,7 +117,7 @@ body {
   color: white;
 }
 
-.Btn.Btn--hollow:hover img {
+.Btn.Btn--hollow:hover svg path {
   fill: white;
 }
 
@@ -192,6 +223,54 @@ header .Nav-inline .Menu .SubMenu-list {
   header .Nav-inline {
     display: block;
   }
+}
+
+/*=-=-=-=-*\
+    HERO          
+\*=-=-=-=-*/
+
+.Hero {
+  padding: 100px 0;
+}
+
+.Hero-info h1 {
+  font-size: 2.8em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Hero-info p {
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Hero-info > a {
+  display: block;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-align: center;
+  color: #534231;
+  margin: 20px 0;
+}
+
+.Hero-figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.CallToAction a {
+  font-size: 0.8em;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.CallToAction > span {
+  font-size: 0.8em;
+  line-height: 35px;
+  color: #bdb5af;
 }
 
 
