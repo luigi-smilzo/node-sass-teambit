@@ -336,7 +336,7 @@ header .Nav-inline .Menu .SubMenu-list {
 
 .Infographic-card {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .Infographic-card img {
@@ -350,8 +350,9 @@ header .Nav-inline .Menu .SubMenu-list {
   text-align: center;
 }
 
-.Infographic div > img {
+.Infographic > div > img {
   margin-bottom: 100px;
+  max-width: 280px;
 }
 
 .Infographic.Infographic--before::after {
@@ -369,6 +370,7 @@ header .Nav-inline .Menu .SubMenu-list {
 
 .Infographic.Infographic--after h2:last-child {
   margin-bottom: 60px;
+  flex-basis: 100%;
 }
 
 

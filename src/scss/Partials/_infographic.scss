@@ -14,7 +14,7 @@
     }
     &-card {
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         
         img {
             display: block;
@@ -26,8 +26,9 @@
             text-align: center;
         }
     }
-    & div > img {
+    & > div > img {
         margin-bottom: 100px;
+        max-width: 280px;
     }
 }
 
@@ -49,5 +50,6 @@
 .Infographic.Infographic--after {
     h2:last-child {
         margin-bottom: 60px;
+        flex-basis: 100%;
     }
 }
