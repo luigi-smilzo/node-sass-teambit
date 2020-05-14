@@ -19,37 +19,6 @@ body {
   font-weight: 300;
 }
 
-.Btn.Btn--hollow {
-  border: 1px solid #374d8a;
-  padding: 10px;
-  border-radius: 6px;
-  background: transparent;
-  transition: background 0.2s;
-}
-
-.Btn.Btn--hollow img {
-  height: 18px;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-.Btn.Btn--hollow span {
-  color: #374d8a;
-  transition: color 0.2s;
-}
-
-.Btn.Btn--hollow:hover {
-  background: #374d8a;
-}
-
-.Btn.Btn--hollow:hover span {
-  color: white;
-}
-
-.Btn.Btn--hollow:hover img {
-  fill: white;
-}
-
 /*=-=-=-=-=-=-=*\
     UTILITIES      
 \*=-=-=-=-=-=-=*/
@@ -84,6 +53,41 @@ body {
   .u-container {
     padding: 0;
   }
+}
+
+/*=-=-=-=-=-=-=-*\
+    COMPONENTS   
+\*=-=-=-=-=-=-=-*/
+
+.Btn.Btn--hollow {
+  border: 1px solid #374d8a;
+  padding: 10px;
+  border-radius: 6px;
+  background: transparent;
+  transition: background 0.2s;
+}
+
+.Btn.Btn--hollow img {
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.Btn.Btn--hollow span {
+  color: #374d8a;
+  transition: color 0.2s;
+}
+
+.Btn.Btn--hollow:hover {
+  background: #374d8a;
+}
+
+.Btn.Btn--hollow:hover span {
+  color: white;
+}
+
+.Btn.Btn--hollow:hover img {
+  fill: white;
 }
 
 /*=-=-=-=-=-*\

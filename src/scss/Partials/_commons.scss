@@ -14,30 +14,3 @@ body {
     font-family: $font-main;
     font-weight: 300;
 }
-
-// Buttons
-.Btn.Btn--hollow {
-    border: 1px solid $col-info;
-    padding: 10px;
-    border-radius: 6px;
-    background: transparent;
-    transition: background .2s;
-    img {
-        height: 18px;
-        vertical-align: middle;
-        margin-right: 5px;
-    }
-    span {
-        color: $col-info;
-        transition: color .2s;
-    }
-    &:hover {
-        background: $col-info;
-        span {
-            color: white;
-        }
-        img {
-            fill: white;
-        }
-    }
-}
