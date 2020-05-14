@@ -273,4 +273,53 @@ header .Nav-inline .Menu .SubMenu-list {
   color: #bdb5af;
 }
 
+@media all and (min-width: 1024px) {
+  .Hero {
+    margin: 0 25px;
+  }
+
+  .Hero-info {
+    flex-basis: calc(100% / 2);
+  }
+
+  .Hero-info h1 {
+    font-size: 2.8em;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .Hero-info p {
+    font-size: 1.25em;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .Hero-info > a {
+    text-align: left;
+  }
+
+  .Hero-figure {
+    flex-basis: calc(100% / 2);
+  }
+
+  .CallToAction {
+    flex-flow: row;
+  }
+
+  .CallToAction a {
+    font-size: 0.8em;
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    padding: 0 20px;
+  }
+
+  .CallToAction > span {
+    font-size: 0.8em;
+    line-height: 35px;
+    color: #bdb5af;
+    margin: 0 15px;
+  }
+}
+
 

@@ -36,5 +36,42 @@
         line-height: 35px;
         color: #bdb5af;
     }
+}
 
+@media all and (min-width: 1024px) {
+    .Hero {
+        margin: 0 25px;
+        &-info {
+            flex-basis: calc(100% / 2);
+            h1 {
+                @include textStyle ($size: 2.8em, $align: left);
+            }
+            p {
+                @include textStyle ($size: 1.25em, $align: left);
+            }
+        }
+        &-info > a {
+            text-align: left;
+        }
+        &-figure {
+            flex-basis: calc(100% / 2);
+        }
+    }
+
+    .CallToAction {
+        flex-flow: row;
+        a {
+            font-size: .8em;
+            text-decoration: none;
+            text-align: center;
+            width: auto;
+            padding: 0 20px;
+        }
+        & > span {
+            font-size: .8em;
+            line-height: 35px;
+            color: #bdb5af;
+            margin: 0 15px;
+        }
+    }
 }
