@@ -53,3 +53,11 @@
         flex-basis: 100%;
     }
 }
+
+@media all and (min-width: 1024px) {
+    .Infographic {
+        &-card {
+            flex-basis: 33%;
+        }
+    }
+}
